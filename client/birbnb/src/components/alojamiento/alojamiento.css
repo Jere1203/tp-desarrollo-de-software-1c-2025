@@ -1,0 +1,38 @@
+.alojamiento-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alojamiento-foto {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 8px 8px;
+  cursor: pointer;
+}
+
+.alojamiento-footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.alojamiento-footer-data {
+  flex: 1;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.alojamiento-footer-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: auto;
+  width: content; /* Empuja el botón hacia abajo */
+  margin: 0 4px;
+}

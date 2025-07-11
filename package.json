@@ -1,0 +1,45 @@
+{
+  "name": "birbnb-futbol-y-negocios",
+  "version": "1.0.0",
+  "description": "BIRBNB\r ======",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "integration-test": "node --experimental-vm-modules node_modules/jest/bin/jest.js test/integration",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasSArias/BirBnB-Futbol-y-Negocios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasSArias/BirBnB-Futbol-y-Negocios/issues"
+  },
+  "homepage": "https://github.com/LucasSArias/BirBnB-Futbol-y-Negocios#readme",
+  "dependencies": {
+
+    "axios": "^1.10.0",
+
+    "bcryptjs": "^3.0.2",
+
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "eslint": "^9.26.0",
+    "globals": "^16.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}

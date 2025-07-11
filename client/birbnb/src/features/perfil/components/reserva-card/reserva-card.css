@@ -1,0 +1,122 @@
+.imagen-reserva {
+  height: 180px;
+  width: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.reserva-content {
+  padding: 16px; /* Agrega padding para mejorar el espaciado */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.card-container {
+  background-color: #fef7ff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 16px; /* Agrega padding general */
+  gap: 16px; /* Espaciado entre elementos */
+  height: auto; /* Ajusta la altura automáticamente */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Agrega sombra para emprolijar */
+}
+
+.botones-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reservas-lista {
+  background-color: #00000013;
+  padding: 20px; /* Mejora el espaciado interno */
+  border-radius: 12px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservas-lista > * {
+  flex: 1 1 300px;
+  max-width: 350px;
+  min-width: 250px;
+}
+
+.reserva-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.calendario-container {
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 24px 20px 16px 20px;
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 380px;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  z-index: 10;
+}
+
+.calendario-container button {
+  margin: 10px 8px 0 8px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px; /* Ajusta el padding para pantallas pequeñas */
+    gap: 12px;
+  }
+
+  .imagen-reserva {
+    height: 120px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .reserva-content {
+    text-align: center; /* Centra el texto en mobile */
+    padding: 12px;
+  }
+
+  .reservas-lista {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .reservas-lista > * {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .calendario-container {
+    position: static;
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px 8px 12px 8px;
+  }
+}
