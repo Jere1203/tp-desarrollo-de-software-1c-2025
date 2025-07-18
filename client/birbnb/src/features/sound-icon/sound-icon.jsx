@@ -16,6 +16,7 @@ function LogoConAudio() {
     const nuevosClicks = clicks + 1
     setClicks(nuevosClicks)
     if (nuevosClicks === 15 && audioRef.current) {
+      audioRef.current.muted = false // Quita el mute antes de reproducir
       audioRef.current.play()
       setClicks(0) // Reinicia el contador si querés que vuelva a sonar cada 10 clicks
     }
@@ -28,11 +29,26 @@ function LogoConAudio() {
     <div>
       <img
         src="/images/logo.png"
-        alt="Logo"
+        alt="BirBnB - Inicio. Haga clic para ir a la página principal"
         onClick={handleLogoClick}
         style={{ cursor: 'pointer', width: 'auto', height: '50px' }}
+        role="button"
+        tabIndex="0"
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            handleLogoClick()
+          }
+        }}
       />
-      <audio ref={audioRef} src="/sounds/doh_r4RZcVw.mp3" />
+      <audio
+        ref={audioRef}
+        src="/sounds/doh_r4RZcVw.mp3"
+        aria-hidden="true"
+        preload="none"
+        controls={false}
+        muted
+        style={{ display: 'none' }}
+      />
     </div>
   )
 }

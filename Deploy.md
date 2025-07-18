@@ -7,8 +7,7 @@
 2. Seteamos en ENVIRONMENT las siguientes variables:
 
    - MONGODB_DB_NAME: birbnb
-   - MONGODB*URI: mongodb+srv://userDB:passwordDB@birbnb.eu4fdqb.mongodb.net/
-     *userDB y passwordDB son credenciales personales\*
+   - MONGODB_URI: mongodb+srv://tperezgiacchetta:HUbxUDk3MAu44Whv@birbnb.eu4fdqb.mongodb.net/
    - PORT: 6969
 
 3. Ponemos a ejecutar el Backend
